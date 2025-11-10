@@ -8,6 +8,7 @@ import { Slider } from "@/components/ui/slider";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/components/ui/use-toast";
 import { Loader2, BookOpen, Sparkles } from "lucide-react";
+import { EmotionDetector } from "@/components/journal/EmotionDetector";
 
 const moods = [
   { value: "happy", label: "Happy", emoji: "😊" },
@@ -148,6 +149,8 @@ const Journal = () => {
                   required
                 />
               </div>
+
+              {content.length > 20 && <EmotionDetector text={content} />}
 
               <div>
                 <Label>How are you feeling?</Label>
