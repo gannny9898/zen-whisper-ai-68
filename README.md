@@ -1,8 +1,39 @@
-# Welcome to your Lovable project
+# AI Mental Health Companion
 
-## Project info
+An intelligent mental health support application powered by AI, providing personalized therapy conversations, mood tracking, emotion analysis, and coping strategies.
 
-**URL**: https://lovable.dev/projects/8e8e5235-1840-47a5-bb1c-71246379c4f8
+## Features
+
+- **🤖 Conversational AI Therapist**: Chat with an empathetic AI therapist powered by advanced language models
+- **📔 AI Journal & Mood Tracker**: Document your thoughts with real-time emotion detection using ML models
+- **📊 Emotion Analysis Dashboard**: Visualize mood patterns and emotional trends over time
+- **💡 Personalized Coping Recommendations**: Get AI-generated coping strategies based on your emotional state
+- **🔒 Privacy & Security**: All data is encrypted and secured with row-level security policies
+- **🧠 Real-time Emotion Detection**: Browser-based ML model (DistilBERT) analyzes text emotions without sending data to servers
+
+## Technology Stack
+
+### Frontend
+- **React 18** with TypeScript
+- **Tailwind CSS** for styling with custom design system
+- **Shadcn UI** components
+- **React Query** for data management
+- **React Router** for navigation
+
+### Backend & AI
+- **Lovable Cloud** (Supabase) for backend infrastructure
+- **PostgreSQL** database with Row Level Security
+- **Edge Functions** for serverless AI processing
+- **HuggingFace Transformers** for client-side emotion detection
+- **Google Gemini & OpenAI GPT** models for AI conversations
+
+### ML Models
+- **Emotion Detection**: `bhadresh-savani/distilbert-base-uncased-emotion` (trained on GoEmotions dataset)
+- Analyzes 6 emotions: joy, sadness, anger, fear, love, surprise
+
+## Project URL
+
+**Lovable Project**: https://lovable.dev/projects/8e8e5235-1840-47a5-bb1c-71246379c4f8
 
 ## How can I edit this code?
 
